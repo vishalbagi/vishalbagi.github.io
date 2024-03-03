@@ -1,1 +1,0 @@
-# vishalbagi..github.io

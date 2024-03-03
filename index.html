@@ -1,33 +1,1127 @@
-<html >
- <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,height=device-height,maximum-scale=1,minimum-scale=1">
-</head> 
-<body style="height:100vh;display: flex;">
- <div style="height: calc(100vh - 30px);">
-  <input style="width:100%;height:30px;"/> 
-  </div>
-  <button style="font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
-height: 30px;
-line-height: 1;
-position: fixed;
-                 min-height:60px;
-width: 10%;
-bottom: 0;
-left: 0;
-padding: 0 5px;
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;
--webkit-box-align: center;
--webkit-align-items: center;
--ms-flex-align: center;
-align-items: center;
-white-space: nowrap;
-color: #9b9dad;
-background: #2c303a;
-border-top: 1px solid #444857;
-z-index: 10;
-font-size: 1rem;">relative</button>  
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Vishal Bagi</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/vb.jpg" alt="Vishal Bagi" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Vishal Bagi">Vishal Bagi</h1>
+
+          <p class="title">Engineering Manager QA</p>
+        </div>
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/vishalbagi/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:vishalbagi44@gmail.com" class="contact-link">vishalbagi44@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Machida, Tokyo, Japan</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>SkillSet</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certification</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Engineering Manager in QA currently in Tokyo, Japan, working in Automation and Performance Testing.
+            I enjoy  increasing efficiency, reliability, and  productivity with test automation while having On-time 
+            delivery, Risk Identification, Mitigation planning for the product
+          </p>
+
+          <p>
+            Solution oriented Quality Assurance leader with 10 years background in the quality assurance field. Skilled at developing and implementing QA processes. Adept at Frontend and Backend automation and working as Automation Test Architect
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/arch.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Automated Test Architect</h4>
+
+                <p class="service-item-text">
+                  Skilled at developing and
+implementing QA processes. Adept at Frontend and Backend
+automation, Setting up end to end CICD pipelines for different teams
+                </p>
+              </div>
+
+            </li>
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/apptest.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile App Testing </h4>
+
+                <p class="service-item-text">
+                  Well verse in different aspect of mobile app testing across different plaforms.
+                  Have extensively worked on Appium for iOS & Android app test , Visual Test  & Security Test.
+                </p>
+              </div>
+
+            </li>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/perf.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Performance Testing</h4>
+
+                <p class="service-item-text">
+                  Performance Testing with experience in application performance testing & tuning with expertise in  Gatling and JMeter.
+                </p>
+              </div>
+
+            </li>
+            
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/strategy.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Testing Plan & Strategy</h4>
+
+                <p class="service-item-text">
+                  Leverage the project with testing types, strategies that optimize testing efforts, reduce time-to-market, and enhance overall product reliability.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/Devops.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">DevOps</h4>
+
+                <p class="service-item-text">
+                  Deliver high-quality, scalable, and reliable infrastructures and CI/CD pipelines for applications.                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/team.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Team Management</h4>
+
+                <p class="service-item-text">
+                  Fosters the team's evolution and  member's growth, including but not
+                  limited to 1on1's, Coaching, creating training materials,Goal setting and
+                  Roadmap planning
+                 </p>
+              </div>
+
+            </li>
+          </ul>
+
+        </section>
+
+
+
+
+  
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+       
+   
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Engineering Manager QA , Ex-TECH LEAD</h4>
+
+              <span>Jun 2020 — Present</span>
+
+              <p class="timeline-text">
+                &bull; Manage a team of QA Leads and Automation QA engineers responsible
+                for the timely and quality delivery of a given product or project.
+                <br />
+                &bull; Collaborate closely with development teams to deliver software release
+                with an ever-increasing level of quality
+                <br />
+                &bull; Key member of Kaizen team to set/improve development, testing and
+                release process in company.
+                <br />
+                &bull; Worked on creating and maintaining testing infrastructure and integrating
+                with CICD pipelines of different teams.
+                <br />
+                &bull; Selection, Evaluation and Management of tools , QA vendors, SaaS
+                partners used for QA process.
+                <br />
+                &bull; Fosters the team’s evolution and it’s member’s growth, including, but not
+                limited to, 1on1’s, Coaching ,creating training materials, Goal setting and
+                Roadmap planning,
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">QA Engineer</h4>
+
+              <span>Feb 2018 – Mar 2020</span>
+
+              <p class="timeline-text">
+                &bull; Created Framework using Page Object model and BDD tools which
+                generated required custom HTML report and has capability of running
+                tests in parallel.
+                <br />
+                &bull; Creating and maintaining End to End test scenario which involved
+                simultaneous Interaction with two mobile applications And additional
+                web based Admin portal
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Test Analyst</h4>
+
+              <span>Sept 2017 - Feb 2018 </span>
+
+              <p class="timeline-text">
+                &bull; Upgrading framework to handle new requirement
+                <br />
+                &bull; Executing and evaluating all sanity/regression reports on a daily basis.
+                <br />
+                &bull; Attend daily calls with clients and discuss the status of the project,
+                challenges and possible fix.
+                <br />
+                &bull; Was part of a team involved in creating a new framework for Phase 2 of
+                the product.
+                
+              </p>
+
+            </li>
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ASSOCIATE CONSULTANT, SSE, SWE</h4>
+
+              <span>Mart 2014 - Sept 2017</span>
+
+              <p class="timeline-text">
+                &bull; Lead team of 6 for automation for building automation framework for UI
+                automation using EggPlant and automation 70% of regression suite.
+                <br />
+                &bull; In multi node physical lab setup, used OCR and image identification of
+                Sikuli along with Socket programming in Python to run tests .
+                <br />
+                &bull; Involved in different functional/non functional testing POC’s and
+                feasibility study of the AUT.
+              </p>
+
+            </li>            
+          </ol>
+
+        </section>
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Engineering Electronics and Telecommunication</h4>
+
+              <span>2009 — 2013</span>
+
+              <p class="timeline-text">
+                Goa College of Engineering
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Higher Secondary School Certificate</h4>
+
+              <span>2007 — 2009</span>
+
+              <p class="timeline-text">
+                  Science
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Secondary School Certificate</h4>
+
+              <span>2001 — 2007</span>
+
+              <p class="timeline-text">
+
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Automation Testing - UI</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Automation Testing - API & Backend</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Performance Testing</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Team Management & Leadership</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="skillset">
+
+        <header>
+          <h2 class="h2 article-title">SkillSet</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+
+            <li class="filter-item">
+              <button data-filter-btn>DevOps</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Dev</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>QA</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+
+
+              <li class="select-item">
+                <button data-select-item>DevOps</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Dev</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>QA</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="qa">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/logos--appium.svg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Appium</h3>
+
+                <p class="project-category">QA</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="qa">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/selenium.svg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Seleniun</h3>
+
+                <p class="project-category">QA</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="qa">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/jmeter.svg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">JMeter</h3>
+
+                <p class="project-category">QA</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="dev">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/java-4.svg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Java</h3>
+
+                <p class="project-category">Dev</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="devops">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/circleci2.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CircleCi</h3>
+
+                <p class="project-category">DevOps</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="Dev">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/aws.svg" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AWS</h3>
+
+                <p class="project-category">Dev</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="dev">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/jira.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Jira</h3>
+
+                <p class="project-category">Dev</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="qa">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/rest-assured-logo-green.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Rest Assured</h3>
+
+                <p class="project-category">QA</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="devops">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/gh.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Github Actions</h3>
+
+                <p class="project-category">DevOps</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="qa">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/cucumber.svg" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Cucumber</h3>
+
+                <p class="project-category">QA</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Certification
+      -->
+
+      <article class="blog" data-page="certification">
+
+        <header>
+          <h2 class="h2 article-title">Certification</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img   style="width:100%;height:100%;" src="./assets/images/aws.png" alt="AWS Certified DevOps Engineer – Professional" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">DevOps</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-05-07">May 07, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">AWS Certified DevOps Engineer – Professional                  </h3>
+
+                  <p class="blog-text">
+                  </p>
+
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img style="width:100%;height:100%;" src="./assets/images/argocd.png" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">GitOps</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-02-05">February 5, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Introduction to Continuous Delivery and GitOps using Argo CD
+                  </h3>
+
+                  <p class="blog-text">
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/gm.png" alt="Gremlin Certified Enterprise Chaos Engineering Certification - GECEC" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Chaos Engineering</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-02-22">February 22, 2024 </time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Gremlin Certified Enterprise Chaos Engineering Certification - GECEC
+                  </h3>
+
+                  <p class="blog-text">
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/psm.png" alt="Professional Scrum Master™ I (PSM I)" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Agile</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-08-14">August 14, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Professional Scrum Master™ I (PSM I)</h3>
+
+                  <p class="blog-text">
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/aws2.png" alt="AWS Certified Cloud Practitioner" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Cloud</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-01-04">January 04, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">AWS Certified Cloud Practitioner</h3>
+
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/azure.png" alt="Microsoft Certified: Azure Fundamentals" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Cloud</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2021-09-21">September 21, 2021</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Microsoft Certified: Azure Fundamentals</h3>
+
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/java.png" alt="Oracle Certified Associate, Java SE 8 Programmer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Java</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2017-08-20"> August 20, 2017</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Oracle Certified Associate, Java SE Programmer</h3>
+
+                  <p class="blog-text">
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/istqb.jpg" alt="Certified ISTQB Tester Foundation Level" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">QA</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2016-09-07">Sep 07, 2016</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Certified ISTQB Tester Foundation Level</h3>
+
+                  <p class="blog-text">
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103860.69133852806!2d139.38815115000003!3d35.562429099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018fda2e1f2eef1%3A0xbc725527dbdafeb2!2sMachida%2C%20Tokyo!5e0!3m2!1sen!2sjp!4v1708671775497!5m2!1sen!2sjp"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form   name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeDV_Cn9fOmbu1icjasCMzLsOgOmq5hEJORMVvHjg63vD97wg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="entry.1035050667" id="entry.1035050667" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="entry.462835868" id="entry.462835868" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="entry.1259580252" id="entry.1259580252" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn"  value="Submit type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript">var submitted=false;</script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $('#gform').on('submit', function(e) {
+    console.log("in submit")
+    $('#gform *').fadeOut(2000);
+    $('#gform').prepend('Your submission has been processed...');
+    });
+  </script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
