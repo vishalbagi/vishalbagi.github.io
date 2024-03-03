@@ -1316,7 +1316,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: 18px;
   }
 
-
+  .form-closed {
+    color: var(--vegas-gold);
+    font-weight: var(--fw-400);
+    line-height: 1.6;
+    }
 
   /**
    * #MAIN
@@ -1644,6 +1648,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-left: auto;
   }
   
+
 }
 
 

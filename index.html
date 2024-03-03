@@ -1113,7 +1113,7 @@ automation, Setting up end to end CICD pipelines for different teams
   $('#gform').on('submit', function(e) {
     console.log("in submit")
     $('#gform *').fadeOut(2000);
-    $('#gform').prepend('Your submission has been processed...');
+    $('#gform').prepend('<h1 class="form-closed">Your submission has been processed...</h1>').toggleClass("closed");
     });
   </script>
   <!--
