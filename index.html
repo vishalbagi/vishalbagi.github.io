@@ -14,7 +14,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Vishal Bagi</title>
+  <title>Portfolio Vishal Bagi</title>
 
   <!--
     - favicon
@@ -32,6 +32,81 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Transitions and Animations */
+    .navbar-link {
+      transition: color 0.3s ease-in-out; /* Smoother transition */
+    }
+
+    .navbar-link:hover {
+      color: #007bff; /* Change to your preferred hover color */
+    }
+
+    .social-link {
+      transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); /* More natural easing */
+    }
+
+    .social-link:hover {
+      transform: scale(1.2);
+    }
+
+    .service-item {
+      transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Refined easing */
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+    }
+
+    .project-item {
+      transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    }
+
+    .project-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .blog-post-item {
+      transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    }
+
+    .blog-post-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .about {
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .navbar {
+      animation: slideInLeft 0.5s ease-out;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .info_more-btn {
+      animation: pulse 2s infinite;
+    }
+  </style>
 </head>
 
 <body>
@@ -57,7 +132,7 @@
         <div class="info-content">
           <h1 class="name" title="Vishal Bagi">Vishal Bagi</h1>
 
-          <p class="title">Engineering Manager QA</p>
+          <p class="title">Engineering Manager</p>
         </div>
         <ul class="social-list">
 
@@ -105,7 +180,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Machida, Tokyo, Japan</address>
+              <address>Gurugram , India</address>
             </div>
 
           </li>
@@ -178,7 +253,7 @@
 
         <section class="about-text">
           <p>
-            I'm Engineering Manager in QA currently in Tokyo, Japan, working in Automation and Performance Testing.
+            I'm Engineering Manager  currently in Gurugram, India, working in Automation and Performance Testing.
             I enjoy  increasing efficiency, reliability, and  productivity with test automation while having On-time 
             delivery, Risk Identification, Mitigation planning for the product
           </p>
