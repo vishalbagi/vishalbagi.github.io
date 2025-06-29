@@ -1226,9 +1226,64 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
+/* Contact info card styles */
+.contact-info-card {
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  border: 1px solid var(--jet);
+}
 
+.contact-info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
 
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px;
+  transition: var(--transition-1);
+}
 
+.contact-info-item:hover {
+  transform: translateX(4px);
+  background: var(--onyx);
+  border-radius: 8px;
+}
+
+.contact-info-item ion-icon {
+  font-size: 24px;
+  color: var(--orange-yellow-crayola);
+}
+
+.info-content .info-title {
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.info-content .info-text,
+.info-content a {
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  text-decoration: none;
+  transition: var(--transition-1);
+}
+
+.info-content a:hover {
+  color: var(--orange-yellow-crayola);
+}
+
+@media (min-width: 580px) {
+  .contact-info-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 /*-----------------------------------*\
   #RESPONSIVE
