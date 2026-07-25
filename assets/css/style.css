@@ -933,7 +933,9 @@ a { color: inherit; }
   11. EXPERIENCE
 \*-----------------------------------*/
 
-.timeline {
+/* qualified with the element so this beats the ol[class] { padding: 0 } reset,
+   which otherwise wins on specificity and zeroes out the dot/connector gutter */
+ol.timeline {
   position: relative;
   display: grid;
   gap: var(--space-10);
@@ -1005,7 +1007,8 @@ a { color: inherit; }
   font-size: var(--step--1);
 }
 
-.role__points {
+/* qualified with the element so this beats the ul[class] { padding: 0 } reset */
+ul.role__points {
   display: grid;
   gap: var(--space-3);
   margin-top: var(--space-5);
