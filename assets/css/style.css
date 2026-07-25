@@ -529,6 +529,16 @@ a { color: inherit; }
   height: var(--header-h);
   display: flex;
   align-items: center;
+}
+
+/* the blurred background lives on a pseudo-element rather than .header itself,
+   because backdrop-filter/filter on .header would make it the containing block
+   for the fixed-position mobile .nav overlay (a descendant), breaking inset: 0 */
+.header::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
   background: color-mix(in srgb, var(--bg) 80%, transparent);
   border-bottom: 1px solid transparent;
   transition:
@@ -537,11 +547,11 @@ a { color: inherit; }
 }
 
 @supports (backdrop-filter: blur(1px)) {
-  .header { backdrop-filter: blur(12px) saturate(140%); }
+  .header::before { backdrop-filter: blur(12px) saturate(140%); }
 }
 
 /* set by script.js once the hero is scrolled past */
-.header.is-stuck {
+.header.is-stuck::before {
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   border-bottom-color: var(--border);
 }
@@ -1359,6 +1369,22 @@ footer {
   text-align: center;
   color: var(--text-muted);
   font-size: var(--step--1);
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3) var(--space-6);
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2) var(--space-5);
 }
 
 footer a {
