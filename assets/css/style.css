@@ -1043,6 +1043,7 @@ a { color: inherit; }
   display: grid;
   gap: var(--space-10);
   margin-top: var(--space-6);
+  margin-left: calc(var(--space-8) * -1);
   padding-left: var(--space-8);
   position: relative;
 }
