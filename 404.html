@@ -6,81 +6,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page not found — Vishal Bagi</title>
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#1e1e1f">
+  <meta name="theme-color" content="#0b0f14" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fbfcfd" media="(prefers-color-scheme: light)">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
 
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="./assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./assets/css/style.css">
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background: hsl(0, 0%, 7%);
-      color: hsl(0, 0%, 84%);
-      font-family: 'Poppins', sans-serif;
-      font-weight: 300;
+    /* the only page-specific rule — everything else comes from the tokens */
+    .notfound {
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .card {
-      background: hsl(240, 2%, 12%);
-      border: 1px solid hsl(0, 0%, 22%);
-      border-radius: 20px;
-      box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-      padding: 40px 30px;
-      max-width: 460px;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: var(--gutter);
       text-align: center;
     }
 
-    .code {
-      background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+    .notfound__code {
+      font-family: var(--ff-mono);
+      font-size: var(--step-6);
+      font-weight: 600;
+      line-height: 1;
+      background: linear-gradient(120deg, var(--accent), var(--accent-2));
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: 56px;
-      font-weight: 600;
-      line-height: 1;
-      margin-bottom: 12px;
     }
-
-    h1 {
-      color: hsl(0, 0%, 98%);
-      font-size: 20px;
-      font-weight: 500;
-      margin-bottom: 12px;
-    }
-
-    p { font-size: 14px; line-height: 1.6; margin-bottom: 25px; }
-
-    a {
-      color: hsl(45, 100%, 72%);
-      border: 1px solid hsl(0, 0%, 22%);
-      border-radius: 14px;
-      display: inline-block;
-      padding: 12px 20px;
-      text-decoration: none;
-      font-size: 14px;
-      transition: 0.25s ease;
-    }
-
-    a:hover, a:focus-visible { background: hsl(240, 2%, 20%); }
   </style>
 </head>
 
 <body>
 
-  <div class="card">
-    <p class="code">404</p>
-    <h1>This page doesn't exist</h1>
-    <p>The link may be out of date, or the page may have moved. Everything lives on the one page.</p>
-    <a href="/">Back to the portfolio</a>
-  </div>
+  <main class="notfound">
+    <div>
+      <p class="notfound__code">404</p>
+
+      <h1 class="section-title" style="margin-top: var(--space-5)">This page doesn't exist</h1>
+
+      <p class="section-lede" style="margin-inline: auto; max-width: 40ch">
+        The link may be out of date, or the page may have moved. Everything lives on the one page.
+      </p>
+
+      <p style="margin-top: var(--space-8)">
+        <a class="btn btn--primary" href="/">Back to the portfolio</a>
+      </p>
+    </div>
+  </main>
 
 </body>
 
